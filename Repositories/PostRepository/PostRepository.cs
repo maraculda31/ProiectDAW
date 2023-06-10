@@ -37,6 +37,31 @@ namespace BlogProject.Repositories.PostRepository
             _context.Posts.Remove(post);
         }
 
+        public Task<IEnumerable<Post>> GetAllPosts()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Post> GetPostById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Post> CreatePost(Post post)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Post> UpdatePost(Post post)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeletePost(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         // Implement additional methods as needed
     }
 }

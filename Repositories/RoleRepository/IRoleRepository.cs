@@ -8,6 +8,11 @@
         void Add(Role role);
         void Update(Role role);
         void Delete(Role role);
+        Task<IEnumerable<Role>> GetAllRoles();
+        Task<Role> GetRoleById(int id);
+        Task<Role> CreateRole(Role role);
+        Task<Role> UpdateRole(Role role);
+        Task<bool> DeleteRole(int id);
         // Define additional methods as needed
     }
 }

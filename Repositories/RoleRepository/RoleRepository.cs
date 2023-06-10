@@ -17,9 +17,9 @@ namespace BlogProject.Repositories.RoleRepository
             return await _context.Roles.FindAsync(id);
         }
 
-        public async Task<Role> GetByNameAsync(string name)
+        public async Task<IEnumerable<Role>> GetAllRoles()
         {
-            return await _context.Roles.FirstOrDefaultAsync(r => r.Name == name);
+            return await _context.Roles.ToListAsync();
         }
 
         public async Task<List<Role>> GetAllAsync()
@@ -40,6 +40,31 @@ namespace BlogProject.Repositories.RoleRepository
         public void Delete(Role role)
         {
             _context.Roles.Remove(role);
+        }
+
+        public Task<Role> GetByNameAsync(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Role> GetRoleById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Role> CreateRole(Role role)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Role> UpdateRole(Role role)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteRole(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 

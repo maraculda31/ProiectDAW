@@ -37,6 +37,31 @@ namespace BlogProject.Repositories.UserRepository
             _context.Users.Remove(user);
         }
 
+        public Task<IEnumerable<User>> GetAllUsers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<User> GetUserById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<User> CreateUser(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<User> UpdateUser(User user)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteUser(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         // Implement additional methods as needed
     }
 }

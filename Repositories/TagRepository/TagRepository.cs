@@ -37,6 +37,31 @@ namespace BlogProject.Repositories.TagRepository
             _context.Tags.Remove(tag);
         }
 
+        public Task<IEnumerable<Tag>> GetAllTags()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Tag> GetTagById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Tag> CreateTag(Tag tag)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Tag> UpdateTag(Tag tag)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> DeleteTag(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         // Implement additional methods as needed
     }
 }

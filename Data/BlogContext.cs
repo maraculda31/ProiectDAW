@@ -27,7 +27,7 @@ namespace BlogProject.Data
                     .AddJsonFile("appsettings.json")
                     .Build();
 
-                string connectionString = configuration.GetConnectionString("data source=DESKTOP-C0IIQSI;Encrypt=False;initial catalog=BlogDatabase;trusted_connection=true");
+                string connectionString = configuration.GetConnectionString("data source=DESKTOP-C0IIQSI;initial catalog=BlogDatabase;Encrypt=False;trusted_connection=true");
 
                 optionsBuilder.UseSqlServer(connectionString);
             }
