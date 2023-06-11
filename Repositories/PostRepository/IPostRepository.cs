@@ -12,6 +12,6 @@
         Task<Post> CreatePost(Post post);
         Task<Post> UpdatePost(Post post);
         Task<bool> DeletePost(int id);
-        // Define additional methods as needed
+       
     }
 }
