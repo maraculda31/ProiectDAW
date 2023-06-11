@@ -62,6 +62,6 @@ namespace BlogProject.Repositories.UserRepository
             throw new NotImplementedException();
         }
 
-        // Implement additional methods as needed
+        
     }
 }
